@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#header {
+  width: 100%;
+}
+
+#candidate-table {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #DD2525;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+#table-container {
+  margin-bottom: 15px;
+}
+
+#table-body tr {
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  margin: 5px 0px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+}
+
+#add-criteria-container, #add-candidate-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+#add-criteria-input {
+  margin-right: 10px;
+}
+
+input {
+  border: 1px solid #DD2525;
+  border-radius: 5px;
+  height: 30px;
+  padding: 10px;
+}
+
+input:hover {
+  color: #DD2525;
+  background-color: #F2E6E6;
+}
+
+#add-criteria-button, #add-candidate-button {
+  margin: 0px;
+  padding: 0px 10px;
+}
+
+#add-criteria, #add-candidate, #calculate {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #DD2525;
+  border: 1px solid #DD2525;
+  font-family: "Karla", serif;
+}
+
+#add-criteria:hover, #add-candidate:hover, #calculate:hover {
+  background-color: #F2E6E6;
+  cursor: pointer;
+}
+
+td {
+  padding: 10px;
+}
+
+circle.nonRoot:hover {
+  stroke: black;
+  stroke-width: 3;
+}
+
+#answer-container {
+  width: 50%;
+  font-size: 36px;
+  text-align: center;
+}
+
+#best-candidate, #max-score {
+  color: #DD2525;
+}
+
+a:link, a:hover, a:visited {
+  text-decoration: none;
+  color: #DD2525;
+}
