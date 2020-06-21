@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="dmm-style.css">
-  </head>
-  <body>
-    <div id="container">
-      <div id="header"><img src="header.svg" width="60%"></div>
-      <div id="add-criteria-container">
-        <div id="add-criteria-input">
-          <label for="input-criteria">criteria</label>
-          <input type="text" id="input-criteria"></input>
-        </div>
-        <div id="criteria-weight-input">
-          <label for="input-criteria">weight</label>
-          <input type="text" id="input-weight"></input>
-        </div>
-        <div id="add-criteria-button">
-          <button id="add-criteria">add criteria</button>
-        </div>
+
+<head>
+  <title>MacKenzie Kerwin | Decision Matrix</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dmm-style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="header"><img src="header.svg" width="60%"></div>
+    <div id="add-criteria-container">
+      <div id="add-criteria-input">
+        <label for="input-criteria">criteria</label>
+        <input type="text" id="input-criteria"></input>
       </div>
-      <div id="add-candidate-container">
-        <div id="add-candidate-input">
-          <label for="input-candidate">candidate</label>
-          <input type="text" id="input-candidate"></input>
-        </div>
-        <div id="add-candidate-button">
-          <button id="add-candidate">add candidate</button>
-        </div>
+      <div id="criteria-weight-input">
+        <label for="input-criteria">weight</label>
+        <input type="text" id="input-weight"></input>
       </div>
-      <div id="table-container">
-        <table id="candidate-table">
-          <tbody id="table-body">
-        </tbody>
-        </table>
+      <div id="add-criteria-button">
+        <button id="add-criteria">add criteria</button>
       </div>
-      <div id="calculate-button">
-        <button id="calculate"><a href="#answer">calculate scores</a></button>
-      </div>
-      <a name="answer"></a>
-      <div id="answer-container"></div>
-      <svg></svg>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div id="add-candidate-container">
+      <div id="add-candidate-input">
+        <label for="input-candidate">candidate</label>
+        <input type="text" id="input-candidate"></input>
+      </div>
+      <div id="add-candidate-button">
+        <button id="add-candidate">add candidate</button>
+      </div>
+    </div>
+    <div id="table-container">
+      <table id="candidate-table">
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    </div>
+    <div id="calculate-button">
+      <button id="calculate"><a href="#answer">calculate scores</a></button>
+    </div>
+    <a name="answer"></a>
+    <div id="answer-container"></div>
+    <svg></svg>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
